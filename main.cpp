@@ -7,7 +7,7 @@ int readFile(const char *filename, Vector3D &v1, Vector3D &v2){
     std::ifstream inputFile(filename);
     if (!inputFile) {
         std::cerr << "Failed to open file." << std::endl;
-        return -1;
+        return -1; 
     }
     inputFile >> v1 >> v2;
     return 0;
